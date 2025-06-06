@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Stealin Stuff</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f6f8fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 3em auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+            padding: 2.5em 2em 2em 2em;
+        }
+
+        h1 {
+            text-align: center;
+            color: #22223b;
+            margin-bottom: 1.5em;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            color: #4a4e69;
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+            font-size: 1.3em;
+            border-left: 4px solid #9a8c98;
+            padding-left: 0.5em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1.5em 0;
+        }
+
+        li {
+            margin: 0.7em 0;
+        }
+
+        a {
+            display: inline-block;
+            padding: 0.7em 1.2em;
+            border-radius: 8px;
+            background: #e0e1dd;
+            color: #22223b;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+        }
+
+        a:hover {
+            background: #c9ada7;
+            color: #fff;
+        }
+
+        .broken a {
+            background: #ffe5e5;
+            color: #b00;
+            border: 1px solid #b00;
+        }
+
+        .broken a:hover {
+            background: #b00;
+            color: #fff;
+        }
+
+        .note {
+            font-size: 1em;
+            color: #3a3a3a;
+            background: linear-gradient(90deg, #ffe5e5 0%, #fff 100%);
+            border-left: 6px solid #e63946;
+            padding: 1em 1.2em;
+            margin-bottom: 1.5em;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(230, 57, 70, 0.07);
+            display: flex;
+            align-items: flex-start; /* changed from center */
+            gap: 0.8em;
+            flex-direction: row;
+        }
+
+        .note-text {
+            display: block;
+        }
+
+        .note::before {
+            content: "⚠️";
+            font-size: 1.5em;
+            margin-right: 0.5em;
+            flex-shrink: 0;
+        }
+
+        .note a {
+            display: inline;
+            padding: 0;
+            border-radius: 0;
+            background: none;
+            color: #e63946;
+            text-decoration: underline;
+            font-weight: 500;
+            box-shadow: none;
+            border: none;
+            transition: color 0.2s;
+        }
+
+        .note a:hover {
+            color: #b00;
+            background: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Game Stealin Stuff</h1>
+
+        <h2>Working Games</h2>
+        <ul>
+            <li><a href="escape-road/index.html">Escape Road</a></li>
+            <li><a href="escape-road-2/index.html">Escape Road 2</a></li>
+            <li><a href="escape-road-city/index.html">Escape Road City</a></li>
+            <li><a href="escape-road-city-2/index.html">Escape Road City 2</a></li>
+        </ul>
+
+        <h2>Broken Games</h2>
+        <div class="note">
+            <span class="note-text">
+                Redirects to <a href="https://azgames.io/">azgames.io</a> upon loading.<br>
+                Feel free to create a pull request if you know how to / have fixed it.
+            </span>
+        </div>
+        <ul>
+            <li class="broken"><a href="BROKEN-escape-road-halloween/index.html">Escape Road Halloween (Broken)</a></li>
+            <li class="broken"><a href="BROKEN-escape-road-winter/index.html">Escape Road Winter (Broken)</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
